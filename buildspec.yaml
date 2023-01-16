@@ -5,6 +5,8 @@ phases:
       - npm i npm@latest -g
       - pip install --upgrade pip
       - npm install -g yarn
+      - echo yarn -v
+      - yarn -v
   pre_build:
     commands:
       - echo Pre_build Phase
@@ -12,7 +14,7 @@ phases:
   build:
     commands:
       - echo Build Phase
-      - yarn build
+      - yarn run build
   post_build:
     commands:
       - echo PostBuild Phase
