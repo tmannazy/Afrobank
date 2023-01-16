@@ -4,14 +4,15 @@ phases:
     commands:
       - npm i npm@latest -g
       - pip install --upgrade pip
+      - npm install -g yarn
   pre_build:
     commands:
       - echo Pre_build Phase
-      # - yarn install
+      - yarn install
   build:
     commands:
       - echo Build Phase
-      # - yarn build
+      - yarn build
   post_build:
     commands:
       - echo PostBuild Phase
@@ -20,4 +21,4 @@ artifacts:
   files:
     - '**/*'
   discard-path: no
-  # base-directory: build
+  base-directory: build
