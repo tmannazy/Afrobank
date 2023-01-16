@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm i --force
+      - npm i npm@latest -g
       - pip install --upgrade pip
   pre_build:
     commands:
@@ -15,10 +15,9 @@ phases:
   post_build:
     commands:
       - echo PostBuild Phase
-      
+
 artifacts:
   files:
     - '**/*'
   discard-path: no
   base-directory: build
-  
