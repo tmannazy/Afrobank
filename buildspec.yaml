@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm npm@latest -g
+      - npm i npm@latest -g n
       - pip install --upgrade pip
       - npm install -g yarn
       - echo yarn -v
